@@ -14,11 +14,6 @@ E clique em "Concluir Compra"
 Então deve ser direcionado para a página de cadastro
 
 Cenário:
-Dado 
-E 
-Então 
-
-Cenário:
 Dado que eu insira o <email> com formato inválido
 E 
 Então deve exibir uma mensagem de alerta: "Formato de email inválido!"

@@ -19,10 +19,10 @@
 
         Exemplos:
         | usuario            | senha            | mensagem                      |
-        | <usuario invalido> | <senha invalida> | "Usuário ou senha inválidos!" |
-        | <usuario valido>   | <senha invalida> | "Usuário ou senha inválidos!" |
-        | <usuario invalido> | <senha valida>   | "Usuário ou senha inválidos!" |
-        | <usuario valido>   | <senha valida>   | "Bem vindo(a) <usuario>!"     |
+        | <usuario> invalido | <senha> invalida | "Usuário ou senha inválidos!" |
+        | <usuario> valido   | <senha> invalida | "Usuário ou senha inválidos!" |
+        | <usuario> invalido | <senha> valida   | "Usuário ou senha inválidos!" |
+        | <usuario> valido   | <senha> valida   | "Bem vindo(a) <usuario>!"     |
 
 
 
