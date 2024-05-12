@@ -1,7 +1,8 @@
 #language: pt
 
 Funcionalidade: Login na plataforma
-Como cliete da EBAC-SHOP
+
+Como cliente da EBAC-SHOP
 Quero fazer o login (autenticação) na plataforma
 Para visualizar meus pedidos
 
@@ -11,26 +12,21 @@ Dado que eu acesse o site da EBAC-SHOP
 
     Cenário: Login na plataforma
     Dado que eu clique em "Minha Conta"
-    Quando eu insirir o <usuario> e a <senha> corretos
+    Quando eu inserir o usuario e senha corretos
     Então deve ser direcionado para a tela de checkout
 
         Exemplos:
-        | usuario             | senha               | ação                       |
-        | <usuario> valido    | <senha> valida      | direcionar para o checkout |
-        | <usuario> invalido  | <senha> invalida    | não deve permitir o acesso |
+        | usuario      | senha          | ação                       |
+        | joaosilva    | Senh@123@      | direcionar para o checkout |
 
     Cenário: Validação de autenticação
-    Dado que eu insira o <usuario> e/ou a <senha> incorrretos
+    Dado que eu insira o usuario e/ou a senha incorretos
     Quando eu tentar fazer o login
     Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos!"
 
         Exemplos:
-        | usuario            | senha            | mensagem                      |
-        | <usuario> invalido | <senha> invalida | "Usuário ou senha inválidos!" |
-        | <usuario> valido   | <senha> invalida | "Usuário ou senha inválidos!" |
-        | <usuario> invalido | <senha> valida   | "Usuário ou senha inválidos!" |
-
-
-
-
-
+        | usuario     | senha       |  mensagem                     |
+        | joaosilva   | sgfusufh    | "Usuário ou senha inválidos!" |
+        | joaosilva   |             | "Usuário ou senha inválidos!" |
+        |             | Senh@123@   | "Usuário ou senha inválidos!" |
+        |             |             | "Usuário ou senha inválidos!" |
